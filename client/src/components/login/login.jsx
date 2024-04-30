@@ -7,11 +7,16 @@ import $ from "jquery";
 const Login = () => {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+/*jquery for the sue of small changes in my website*/
   $(document).ready(()=>{
     $(".err-user").hide()
     $(".err-pwd").hide()
+    $("body").css("background","#EEEEEE")
   })
+
+  /*getting the form submitted data*/
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -50,6 +55,7 @@ const Login = () => {
   }
   return (
     <>
+    <div className="main">
       <div className="login">
         <div className="login-form">
           <form onSubmit={handleSubmit}>
@@ -80,6 +86,7 @@ const Login = () => {
           </form>
         </div>
        
+      </div>
       </div>
     </>
   );

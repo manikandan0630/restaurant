@@ -1,24 +1,25 @@
+.main{
+    width: 100%;
+ 
+}
 .login{
     width: 85%;
     margin:60px auto;
     display: flex;
     justify-content:center;
     align-items: center;
-
-    
 }
 /*form*/
 .login-form{ 
 
     display: flex;
     align-items: center;
-  
+    
    padding: 20px;
 }
 .login-form form{
     display: flex;
     flex-direction: column;
-
     align-items: center;
     gap: 30px;
     border-radius: 2px;
