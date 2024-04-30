@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./login.css";
-import Test from "../../test.jsx";
+import Test from "../../home.jsx";
 import {Link} from "react-router-dom";
 import $ from "jquery";
 

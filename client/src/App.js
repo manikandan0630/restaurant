@@ -7,7 +7,7 @@ import Signup from './components/signup/Signup';
 import  Contact  from "./contact.jsx"
 import  Menu  from "./menu"
 import About from "./about.jsx"
-import Test from "./test.jsx"
+import Home from "./home.jsx"
 function App() {
 
   //check the session to check the authentication login or not
@@ -21,7 +21,7 @@ function App() {
       <Routes>
           <Route path='/' element={<Login />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
-          <Route path="/home" element={<Test />}></Route>
+          <Route path="/home" element={<Home />}></Route>
         <Route path="/menu" element={isAuthenticated?<Menu />:<Login />}></Route>
         <Route path="/about" element={isAuthenticated?<About />:<Login />}></Route>
         <Route path="/contact" element={isAuthenticated?<Contact />:<Login />}></Route>

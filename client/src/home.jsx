@@ -8,8 +8,10 @@ import Vege from "./assets/images/vegetable.jpg";
 import Graphes from "./assets/images/graphes.jpg";
 import Leaves from "./assets/images/leaves.jpg";
 import Chef1 from "./assets/images/chef-1.jpg";
+import Chef2 from "./assets/images/chef-2.jpg";
+import Chef3 from "./assets/images/chef-3.jpg";
 
-function test() {
+function Home() {
   return (
     <>
       {/* nav bar*/}
@@ -62,24 +64,24 @@ function test() {
 
       {/* Our chefs*/}
       <div className="our-chefs">
-
+            <h1>Our Proffesional Chefs</h1>
         <div className="chef-list">
             <div className="chefs">
-              <img src={Chef1} alt="" width={"250px"} height={"250px"}/>
+              <img src={Chef1} alt="" width={"220px"} height={"220px"}/>
               <h2>Ranveer Brar</h2>
               <span>Master Chef</span>
               <p>A bite-sized culinary competition where tiny kitchens yield grand flavors. Watch as miniature chefs whip up epic dishes with colossal taste</p>
             </div>
             <div className="chefs">
-              <img src={Chef1} alt="" width={"250px"} height={"250px"}/>
-              <h2>Ranveer Brar</h2>
-              <span>Master Chef</span>
+              <img src={Chef2} alt="" width={"220px"} height={"220px"}/>
+              <h2> Anderson</h2>
+              <span>Patissier</span>
               <p>A bite-sized culinary competition where tiny kitchens yield grand flavors. Watch as miniature chefs whip up epic dishes with colossal taste</p>
             </div>
             <div className="chefs">
-              <img src={Chef1} alt="" width={"250px"} height={"250px"}/>
-              <h2>Ranveer Brar</h2>
-              <span>Master Chef</span>
+              <img src={Chef3} alt="" width={"220px"} height={"220px"}/>
+              <h2>Sarah Jhonson</h2>
+              <span>Cook</span>
               <p>A bite-sized culinary competition where tiny kitchens yield grand flavors. Watch as miniature chefs whip up epic dishes with colossal taste</p>
             </div>
         </div>
@@ -89,4 +91,4 @@ function test() {
 }
 
 
-export default test
+export default Home
