@@ -43,7 +43,7 @@
 .hero-2 {
   width: 50%;
   margin-top: 64px;
-  margin-left: 150px;
+  margin-left: 160px;
   margin-bottom: 50px;
 }
 
@@ -51,14 +51,14 @@
 /*fruits card*/
 .main-section{
     width: 100%;
-    background: #EEEEEE;
- 
-   
+    background: #EEEEEE;   
+    height: auto;
+    padding-bottom: 30px;
 }
 .fruits{
     
     width: 82%;
-    margin: 0px auto;
+    margin: 0px auto 30px ;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 30px;
@@ -73,6 +73,7 @@
     gap: 20px;
     background: #fff;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px #fff;
 }
 .fruits-card img{
     border-radius: 60%;
@@ -84,4 +85,8 @@
 }
 .fruits-card span{
     margin-top: 20px;
+}
+
+.chef{
+    width: 100%;
 }

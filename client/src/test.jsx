@@ -2,12 +2,12 @@ import React from "react"
 import Navbar from "./components/navbar/navbar"
 import { Link } from "react-router-dom"
 import "./home.css"
-import Hero from "./hero-img.png"
+import Hero from "./assets/images/hero-img.png"
 
-import Vege from "./vegetable.jpg";
-import Graphes from "./graphes.jpg";
-import Leaves from "./leaves.jpg";
-import Chef1 from "./chef-1.jpg";
+import Vege from "./assets/images/vegetable.jpg";
+import Graphes from "./assets/images/graphes.jpg";
+import Leaves from "./assets/images/leaves.jpg";
+import Chef1 from "./assets/images/chef-1.jpg";
 
 function test() {
   return (
@@ -65,10 +65,22 @@ function test() {
 
         <div className="chef-list">
             <div className="chefs">
-              <img src={Chef1} alt="" />
+              <img src={Chef1} alt="" width={"250px"} height={"250px"}/>
               <h2>Ranveer Brar</h2>
               <span>Master Chef</span>
-              <p></p>
+              <p>A bite-sized culinary competition where tiny kitchens yield grand flavors. Watch as miniature chefs whip up epic dishes with colossal taste</p>
+            </div>
+            <div className="chefs">
+              <img src={Chef1} alt="" width={"250px"} height={"250px"}/>
+              <h2>Ranveer Brar</h2>
+              <span>Master Chef</span>
+              <p>A bite-sized culinary competition where tiny kitchens yield grand flavors. Watch as miniature chefs whip up epic dishes with colossal taste</p>
+            </div>
+            <div className="chefs">
+              <img src={Chef1} alt="" width={"250px"} height={"250px"}/>
+              <h2>Ranveer Brar</h2>
+              <span>Master Chef</span>
+              <p>A bite-sized culinary competition where tiny kitchens yield grand flavors. Watch as miniature chefs whip up epic dishes with colossal taste</p>
             </div>
         </div>
       </div>

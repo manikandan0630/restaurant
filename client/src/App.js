@@ -10,7 +10,7 @@ import About from "./about.jsx"
 import Test from "./test.jsx"
 function App() {
 
-  //check the session to chec the authentication
+  //check the session to check the authentication login or not
   let isAuthenticated=false
   isAuthenticated=sessionStorage.getItem("login")
 
