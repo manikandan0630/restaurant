@@ -4,7 +4,7 @@ import cors from "cors";
 import  SignupModel  from "./config.js"; // Import the appropriate user model
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-
+import Recipe from "./data.js"
 
 const app = express();
 app.use(cors());
@@ -84,15 +84,20 @@ app.post("/login", async (req, res) => {
 
 //data
 app.get("/menu", async (req, res) => {
-  try {
-    const recipes = await db.collection("recipes").find({}).toArray();
-    console.log(typeof(recipes))
-    res.status(200).json(recipes);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: "Internal Server Error" });
-  }
-});
+
+    try {
+   
+      const recipe = await Recipe.findById("66337ecc1e5d04247034af90");
+      if(!recipe){
+        return res.status(404).json({message:"Recipe not found"})
+      }
+      res.json(recipe)
+    } catch (error) {
+      console.error(error);
+    }
+  })
+  
+
 
 // Start server
 const PORT = process.env.PORT || 3001;

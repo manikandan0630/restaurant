@@ -1,6 +1,7 @@
 .menu{
     width: 100%;
     background: #EEEEEE;
+    padding: 20px 0px;
 }
 .menu-list{
     width:82%;
@@ -14,11 +15,21 @@
   background: #fff;
   padding: 60px ;
   border-radius: 10px;
+  box-shadow: 0px 0px 2px #faf9f9
 }
 .list img{
     margin-top: -30px;
     border-radius: 50%;
 }
 .list h2{
-    padding: 5px;
+    text-align: center;
+
+    padding: 10px;
+}
+.list p:last-child{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #CE1212;
 }

@@ -22,7 +22,6 @@ const signupSchema = new mongoose.Schema({
 
 
 
-
 // Create Signup model
 const SignupModel = mongoose.model("Signup", signupSchema);
 
