@@ -1,15 +1,6 @@
 import mongoose from "mongoose";
 
-const uri = "mongodb://0.0.0.0:27017/users"; // MongoDB URI
 
-// Connect to MongoDB
-mongoose.connect(uri)
-    .then(() => {
-        console.log("Connected to MongoDB");
-    })
-    .catch((error) => {
-        console.error("Could not connect to MongoDB:", error);
-    });
 
 
 

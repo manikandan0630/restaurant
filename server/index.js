@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import  SignupModel  from "./config.js"; // Import the appropriate user model
 import bodyParser from "body-parser";
+import mongoose from "mongoose";
 
 
 const app = express();
@@ -11,6 +12,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+const uri = "mongodb://0.0.0.0:27017/users"; // MongoDB URI
+
+// Connect to MongoDB
+mongoose.connect(uri)
+  
+const db=mongoose.connection
+db.on("error", console.error.bind(console, "MongoDB connection error:"));
+db.once("open", () => {
+  console.log("Connected to MongoDB");
+});
 
 
 // Signup Route Handler
@@ -70,6 +81,19 @@ app.post("/login", async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 });
+
+//data
+app.get("/menu", async (req, res) => {
+  try {
+    const recipes = await db.collection("recipes").find({}).toArray();
+    console.log(typeof(recipes))
+    res.status(200).json(recipes);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+});
+
 // Start server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
