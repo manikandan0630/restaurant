@@ -3,7 +3,6 @@ import express from "express";
 import cors from "cors";
 import  SignupModel  from "./config.js"; // Import the appropriate user model
 import bodyParser from "body-parser";
-import bcrypt from "bcrypt";
 
 
 const app = express();
@@ -57,10 +56,11 @@ app.post("/login", async (req, res) => {
     if (!user) {
       return res.status(401).json({ message: "Invalid username or password" });
     }
+  
 
-    // Compare passwords
     
-    if (password==user.password) {
+    if (password===user.password) {
+
       res.status(200).json({ message: "Login successful", user });
     } else {
       res.status(401).json({ message: "Invalid username or password" });
