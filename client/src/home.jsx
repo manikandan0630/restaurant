@@ -11,6 +11,9 @@ import Chef1 from "./assets/images/chef-1.jpg";
 import Chef2 from "./assets/images/chef-2.jpg";
 import Chef3 from "./assets/images/chef-3.jpg";
 
+import Footer from "./components/footer/footer.jsx"
+
+
 function Home() {
   return (
     <>
@@ -86,6 +89,10 @@ function Home() {
             </div>
         </div>
       </div>
+
+      {/*footer*/}
+   
+      <Footer />
     </>
   )
 }

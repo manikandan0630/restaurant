@@ -1,0 +1,81 @@
+.footer{
+    width: 100%;
+    background: black;
+}
+.foot{
+    width:82%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: #fff;
+}
+.address{
+    padding: 100px 20px;
+    margin-top: -30px;
+}
+.address p{
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.reservation{
+    padding: 100px 20px;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column
+}
+.reservation span{
+    padding: 5px;
+
+  gap: 5px;
+}
+.opening{
+    padding: 100px 20px;
+    margin-top: -30px;
+}
+.opening span{
+  padding: 3px;
+ font-size: 15px;
+ font-weight: bold;
+
+ 
+}
+.opening p{
+    margin-top: 20px;
+}
+.opening p:last-child{
+    margin-bottom: 20px
+}
+
+.follow{
+    padding: 100px 20px;
+    margin-top: -30px;
+}
+.icons span{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;   
+    text-align: center; 
+    padding: 10px 8px;
+    border-radius: 50%;
+}
+.icons span:hover{
+    box-shadow: 0px 0px 12px #fff;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .foot{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:576px) {
+    .foot{
+        grid-template-columns: auto;
+    }
+}
