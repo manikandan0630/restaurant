@@ -73,9 +73,15 @@
     .foot{
         grid-template-columns: auto auto;
     }
+    .icons span:hover{
+        box-shadow: 0px 0px 12px #fff;
+    }
 }
 @media screen and (max-width:576px) {
     .foot{
         grid-template-columns: auto;
+    }
+    .icons span:hover{
+        box-shadow: 0px 0px 12px #fff;
     }
 }

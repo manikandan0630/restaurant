@@ -129,3 +129,38 @@
     border-radius: 100%;
     margin: -15px 50px 0px;
 }
+
+@media screen and (max-width:768px) {
+  .hero-main{
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-1{
+    width: 82%;
+  } 
+  .hero-2{
+    width: 82%;
+
+  }
+  .hero-2 img{
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+  .fruits{
+    grid-template-columns: auto;
+  }
+  .fruits-card img{
+ 
+    border-radius: 60%;
+    margin: 0px auto ;
+}
+.chef-list{
+  grid-template-columns: auto;
+}
+.chefs img{
+  border-radius: 100%;
+  margin: 0px auto;
+}
+
+}

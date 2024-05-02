@@ -28,14 +28,14 @@ app.post("/signup", async (req, res) => {
     }
 
     // Hash password
-    const hashedPassword = await bcrypt.hash(password, 10);
+ 
 
     // Create new user
     const newUser = await SignupModel.create({
       username,
       email,
       mobile,
-      password: hashedPassword,
+      password
     });
 
     res.status(201).json({ message: "Registration successful", user: newUser });
@@ -59,9 +59,8 @@ app.post("/login", async (req, res) => {
     }
 
     // Compare passwords
-    const passwordMatch = bcrypt.compare(password, user.password);
-
-    if (passwordMatch) {
+    
+    if (password==user.password) {
       res.status(200).json({ message: "Login successful", user });
     } else {
       res.status(401).json({ message: "Invalid username or password" });

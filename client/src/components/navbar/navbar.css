@@ -55,11 +55,13 @@
 
 @media screen and (max-width:768px){
   .navbar h1{
-    margin-right: 500px;
+    font-size: auto;
+    margin-right: 400px;
     position: fixed;
   }
   .navbar{
     flex-direction: column;
+    position: fixed;
    
   }
     .navbar ul{
@@ -81,7 +83,7 @@
         display: block;
         position: absolute;
         top: 30px;
-        left: 700px;
+        left: 580px;
         font-size: 20px;
     }
     .navbar button{
